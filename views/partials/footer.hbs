@@ -1,0 +1,20 @@
+<footer>
+  <p>
+
+    
+    <a href="https://thiesmueller.de" title="Thies Mueller Service Solutions">Thies Mueller Service Solutions</a> <span>|</span>
+    
+    <a href="https://abuse.tservic.es" title="Abuse">Abuse</a> <span>|</span>
+
+    <a href="/terms" title="Terms of Service">Terms of Service</a>
+    
+    {{#if contact_email}}
+      <span>|</span> 
+      <button class="link" hx-get="/get-support-email" hx-swap="outerHTML">
+        <span>{{> icons/spinner}}</span>
+       Support E-Mail 
+      </button>
+    {{/if}}
+
+  </p>
+</footer>
